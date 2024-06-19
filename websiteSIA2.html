@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOMBING SITE</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="animations.css">
+    <!-- BOOTSRAP -->
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
+
+    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/fontawesome.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/brands.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/regular.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/solid.css">
+
+   
+    <script src="datatables/js/jquery-3.7.1.js"></script>
+    <script src="datatables/js/bootstrap.bundle.min.js"></script>
+    <script src="datatables/js/dataTables.js"></script>
+    <script src="datatables/js/dataTables.bootstrap5.js"></script>
+    <script src="datatables/js/dataTables.buttons.js"></script>
+    <script src="datatables/js/buttons.bootstrap5.js"></script>
+    <script src="datatables/js/jszip.min.js"></script>
+    <script src="datatables/js/pdfmake.min.js"></script>
+    <script src="datatables/js/vfs_fonts.js"></script>
+    <script src="datatables/js/buttons.html5.min.js"></script>
+    <script src="datatables/js/buttons.print.min.js"></script>
+    <script src="datatables/js/buttons.colVis.min.js"></script>
+    <!--SWAL-->
+     <!-- dataTables -->
+     <link rel="stylesheet" href="datatables/css/bootstrap.min.css">
+     <link rel="stylesheet" href="datatables/css/buttons.bootstrap5.css">
+     <link rel="stylesheet" href="datatables/css/datatables.bootstap5.css">
+      <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- IonIcons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+</head>
+<script src="sweetAlert.js"></script>
+<!-- <script src="bootstrap-5.3.2-dist/js/bootstrap.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<!--SWAL-->
+
+
+<body class="hold-transition sidebar-mini bg-secondary">
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="dashboard-1.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="#" class="nav-link">Contact</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="#" class="nav-link">Reserve A Bomb</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="data-tables.html" class="nav-link">Bomb A Target</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Bomb here 
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="bombthetarget.html">Bomb A target</a></li>
+            <li><a class="dropdown-item" href="#">Buy a BOMB</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+      
+      </ul>
+
+
+  
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Navbar Search -->
+        <li class="nav-item">
+          <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+            <i class="fas fa-search"></i>
+          </a>
+          <div class="navbar-search-block">
+            <form class="form-inline">
+              <div class="input-group input-group-sm">
+                <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                  <button class="btn btn-navbar" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                  <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                    <i class="fas fa-times"></i>
+                  </button>
+                  
+                </div>
+              </div>
+            </form>
+          </div>
+        </li>
+  
+        <!-- Messages Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-comments"></i>
+            <span class="badge badge-danger navbar-badge">10m</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <a href="#" class="dropdown-item">
+              <!-- Message Start -->
+              <div class="media">
+                <img src="dist/img/hitler.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    Adolf Hitler
+                    <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                  </h3>
+                  <p class="text-sm">Call me whenever you can...</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> Active🟢</p>
+                </div>
+              </div>
+              <!-- Message End -->
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <!-- Message Start -->
+              <div class="media">
+                <img src="dist/img/Putin.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    Vladimir Putin
+                    <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                  </h3>
+                  <p class="text-sm">I got your message bro</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 10 Hours Ago</p>
+                </div>
+              </div>
+              <!-- Message End -->
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <!-- Message Start -->
+              <div class="media">
+                <img src="dist/img/kimjonun.webp" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    Kim Jong Un
+                    <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                  </h3>
+                  <p class="text-sm">Send me new Bombs for my collection</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i>69 hours Ago</p>
+                </div>
+              </div>
+              <!-- Message End -->
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+          </div>
+        </li>
+        <!-- Notifications Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-bell"></i>
+            <span class="badge badge-warning navbar-badge">150k</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <span class="dropdown-item dropdown-header">150k Notifications</span>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-envelope mr-2"></i> 100k new messages
+              <span class="float-right text-muted text-sm">3 mins</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-users mr-2"></i> 1M friend requests
+              <span class="float-right text-muted text-sm">69 hours</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-file mr-2"></i> 10m new reports
+              <span class="float-right text-muted text-sm">2 days</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+            <i class="fas fa-expand-arrows-alt"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+            <i class="fas fa-th-large"></i>
+          </a>
+        </li>
+  
+      </ul>
+    </nav>
+    <!-- /.navbar -->
+  
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-link">
+        <img src="dist/img/bomb1.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+        <span class="brand-text font-weight-light">Oppenheimer</span>
+      </a>
+  
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img src="dist/img/Picbomb.webp" class="img-circle elevation-2" alt="User Image">
+          </div>
+          <div class="info">
+            <a href="#" class="d-block">J. Robert Oppenheimer</a>
+          </div>
+        </div>
+  
+        <!-- SidebarSearch Form -->
+        <div class="form-inline">
+          <div class="input-group" data-widget="sidebar-search">
+            <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+            <div class="input-group-append">
+              <button class="btn btn-sidebar">
+                <i class="fas fa-search fa-fw"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+             <!-- Add icons to the links using the .nav-icon class
+                 with font-awesome or any other icon font library -->
+                
+        <li class="nav-item">
+          <a href="data-tables.html" class="nav-link">
+            <i class="nav-icon fas fa-table">Data Tables</i>
+            <p>
+              
+              <span class="right badge badge-danger">New</span>
+            </p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="Profile.html" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Profile</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="websiteSIA2.html" class="nav-link">
+            <i class="fa fa-check-circle nav-icon"></i>
+            <p>Shop</p>
+          </a>
+        </li>
+      
+      </ul>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+  
+      <!-- carousel -->
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="dist/img/bomb1.jpg" width="500" height="500" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Bomb 1 💀</h5>
+              <p>VERY DESTRUCTIVE</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="dist/img/bomb2.jfif" width="500" height="500" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Bomb 2 💀</h5>
+              <p>DESTRUCTIVE TOO ITS THIN BUT IT CAN STILL DESTROY</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="dist/img/bomb3.jfif" width="500" height="500" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Bomb 3 💀</h5>
+              <p>First BOMB that created and was sent</p>
+            </div>
+              </div>
+          </div>
+        </div>
+      </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+     
+      <br>
+      <!--12 column-->
+      <div class="container bg-secondary">
+        <div class="row">
+<!--4x8-->
+<div class="col-md-4 ">
+  <h1>BOMB THE WORLD</h1>
+</div>
+<div class="col-md-8 " id="adss">
+  <h1>THE RESULT OF THE BOMBBBB</h1>
+</div>
+<div class="col-md-3 " id="adss">
+  <img src="dist/img/column1.jpg" width="270" height="200" >
+</div>
+  <div class="col-md-3 " id="adss">
+  <img src="dist/img/column2.jpg" width="270" height="200" >
+</div>
+  <div class="col-md-3 " id="adss">
+  <img src="dist/img/column3.jfif" width="270" height="200" >
+</div>
+  <div class="col-md-3 " id="adss">
+  <img src="dist/img/column4.jfif" width="260" height="200" >
+</div>
+
+</div>
+        </div>
+        </div>
+        <br>
+        <div class="containers bg-secondary">
+
+          <div class="row">
+      
+            <div class="col-md-12 ">
+              <center>
+                <h1>BARREL BOMB </h1>
+              </center>
+            </div>
+            <br>
+            <div class="col-md-4 " >
+              <img src="dist/img/barrel.jpg" width="270" height="200" >
+            </div>
+            <div class="col-md-8  " >
+              <p id="title2 " >A barrel bomb is an improvised unguided bomb, sometimes described as a flying IED (improvised explosive device). They are typically made from a large barrel-shaped metal container that has been filled with high explosives, possibly shrapnel, oil or chemicals as well, and then dropped from a helicopter or aeroplane.[1] Due to the large amount of explosives (up to 1,000 kilograms (2,200 lb)), their poor accuracy, and indiscriminate use in populated civilian areas (including refugee camps), the resulting detonations have been devastating.[2][3][4] Critics have characterised them as weapons of terror and illegal under international conventions.[5]</p>
+            </div>
+            <br>
+            <div class="col-md-12 ">
+              <center>
+                <h1>BLOCK BUSTER BOMB</h1>
+              </center>
+            </div>
+            <div class="col-md-8 ">
+              <p id="title3" >  The bombs then called Blockbusters were the RAF's HC (high capacity) bombs. These bombs had especially thin casings that allowed them to contain approximately three-quarters of their weight in explosive, with a 4000 lb bomb (nominal weight) containing about 3,000 lb (1,400 kg) of explosive (Amatol, RDX or Torpex). Most general-purpose bombs, termed "medium capacity'" (MC) by the RAF, contained 50% explosive by weight, the rest being made up of the fragmentation casing. Larger Blockbusters were made later in the war, from the original 4,000 lb (1,800 kg) version, up to 12,000 lb (5,400 kg).</p>
+            </div>
+            <div class="col-md-4 ">
+              <img src="dist/img/blockbusterbomb.jpg" width="270" height="200" >
+            </div>
+            <br>
+            <div class="col-md-12 ">
+              <center>
+                <h1>Bouncing Bomb </h1>
+              </center>
+            </div>
+            <div class="col-md-4 ">
+              <img src="dist/img/bouncing.jpg" width="270" height="200">
+            </div>
+            <div class="col-md-8 ">
+              <p id="title4" >A bouncing bomb is a bomb designed to bounce to a target across water in a calculated manner to avoid obstacles such as torpedo nets, and to allow both the bomb's speed on arrival at the target and the timing of its detonation to be pre-determined, in a similar fashion to a regular naval depth charge. The inventor of the first such bomb was the British engineer Barnes Wallis, whose "Upkeep" bouncing bomb was used in the RAF's Operation Chastise of May 1943 to bounce into German dams and explode underwater, with an effect similar to the underground detonation of the later Grand Slam and Tallboy earthquake bombs, both of which he also invented.</p>
+            </div>
+            <br>
+            <div class="col-md-12 " >
+              <center>
+                <h1>Bunker Buster</h1>
+              </center>
+            </div>
+            <div class="col-md-8 ">
+              <p id="title5" >A bunker buster is a type of munition that is designed to penetrate hardened targets or targets buried deep underground, such as military bunkers.</p>
+            </div>
+            <div class="col-md-4 ">
+              <img src="dist/img/bunkerbuster.jpg" width="270" height="200">
+            </div>
+            <div class="col-md-12 " >
+              <center>
+                <h1>Cluster Bomb </h1>
+              </center>
+            </div>
+            <div class="col-md-4 ">
+              <img src="dist/img/clusterbomb.jpg" width="270" height="200">
+            </div>
+            <div class="col-md-8 ">
+              <p id="title6" >A cluster munition is a form of air-dropped or ground-launched explosive weapon that releases or ejects smaller submunitions. Commonly, this is a cluster bomb that ejects explosive bomblets that are designed to kill personnel and destroy vehicles. Other cluster munitions are designed to destroy runways or electric power transmission lines.</p>
+            </div>
+            <div class="col-md-12 ">
+              <center>
+                <h1>Glider Bomb</h1>
+              </center>
+            </div>
+            <div class="col-md-8 ">
+              <p id="title7" >A glide bomb or stand-off bomb is a standoff weapon with flight control surfaces to give it a flatter, gliding flight path than that of a conventional bomb without such surfaces. This allows it to be released at a distance from the target rather than right over it, allowing a successful attack without exposing the launching aircraft to anti-aircraft defenses near the target.[1] Glide bombs can accurately deliver warheads in a manner comparable to cruise missiles at a fraction of the cost—sometimes by installing flight control kits on simple unguided bombs—and they are very difficult for surface-to-air missiles to intercept due to their tiny radar signatures and short flight times. The only effective countermeasure in most cases is to shoot down enemy aircraft before they approach within launching range, making glide bombs very potent weapons where wartime exigencies prevent this</p>
+            </div>
+            <div class="col-md-4 ">
+              <img src="dist/img/Glider.jpg"width="270" height="200">
+            </div>
+          </div>
+        </div>
+        <br>
+      <!-- footer -->
+      <div class="container ">
+        <footer class="py-5 " >
+          <div class="row ">
+            <div class="col-6 col-md-2 ">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-md-5 offset-md-1">
+              <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of what's new and exciting from us.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                  <button class="btn btn-primary" type="button" id="btnswal">Subscribe</button>
+                  <!--SWAL-->
+                  <br>
+          
+          <script>
+            $(document).on('click','#btnswal', function(){
+                swal({
+  title: "You wannna Subscribe",
+  text: "Once subcribe, you will not be able to unscribe!",
+  icon: "warning",
+  buttons: true,
+  dangerMode: true,
+})
+.then((willDelete) => {
+  if (willDelete) {
+    swal("Poof! You are now SUBRCRIBE", {
+      icon: "success",
+    });
+  } else {
+    swal("INTRUDER");
+  }
+});
+            });
+          </script>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>© 2024 Company, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+            </ul>
+          </div>
+          
+        </footer>
+      </div>
+      <!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE -->
+<script src="dist/js/adminlte.js"></script>
+
+<!-- OPTIONAL SCRIPTS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard3.js"></script>
+<script src="dist/js/sweetAlert.js"></script>
+</body>
+</html>
